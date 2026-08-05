@@ -1,0 +1,431 @@
+recipe_name,ingredient,quantity,unit
+Veg or tomato/Pumpkin/,Celery,50.0,g
+Veg or tomato/Pumpkin/,Leek,50.0,g
+Veg or tomato/Pumpkin/,Onion,100.0,g
+Veg or tomato/Pumpkin/,Carrot,300.0,g
+Veg or tomato/Pumpkin/,White cabbage,100.0,g
+Veg or tomato/Pumpkin/,Green beans,100.0,g
+Veg or tomato/Pumpkin/,Zucchini,300.0,g
+Veg or tomato/Pumpkin/,Garlic,20.0,g
+Veg or tomato/Pumpkin/,Tomato pest,10.0,g
+Veg or tomato/Pumpkin/,Knor,1.0,pc
+Veg or tomato/Pumpkin/,Black pepper,2.0,g
+Pumpkin soup,Celery,50.0,g
+Pumpkin soup,Leek,50.0,g
+Pumpkin soup,Onion,100.0,g
+Pumpkin soup,Pumpkin,500.0,g
+Pumpkin soup,Oil,30.0,ml
+Pumpkin soup,Knor,1.0,pc
+Pumpkin soup,Black pepper,2.0,g
+Pumpkin soup,Garlic,20.0,g
+Pumpkin soup,Ginger,20.0,g
+Tomato soup,Tomato,500.0,g
+Tomato soup,Celery,50.0,g
+Tomato soup,Leek,50.0,g
+Tomato soup,Onion,100.0,g
+Tomato soup,Garlic,20.0,g
+Tomato soup,Oil,30.0,g
+Tomato soup,Tomato pest,20.0,g
+Tomato soup,Black pepper,20.0,g
+Tomato soup,Knor,1.0,pc
+Carrot soup,Celery,50.0,g
+Carrot soup,Leek,50.0,g
+Carrot soup,Onion,100.0,g
+Carrot soup,Garlic,20.0,g
+Carrot soup,Oil,30.0,ml
+Carrot soup,Carrot,200.0,g
+Carrot soup,Knor,1.0,pc
+Carrot soup,Black pepper,20.0,g
+Carrot soup,Lemon grass,1.0,pc
+Lentil Soup,Celery,50.0,g
+Lentil Soup,Leek,50.0,g
+Lentil Soup,Onion,100.0,g
+Lentil Soup,Garlic,20.0,g
+Lentil Soup,Ginger,20.0,g
+Lentil Soup,Lentil,300.0,g
+Lentil Soup,Oil,30.0,g
+Lentil Soup,Knor,1.0,pc
+Lentil Soup,Black pepper,2.0,g
+Lentil Soup,Lemon grass,1.0,pc
+Chicken soup,Leek,50.0,g
+Chicken soup,Onion,100.0,g
+Chicken soup,Garlic,20.0,g
+Chicken soup,Carrot,100.0,g
+Chicken soup,Zucchini,100.0,g
+Chicken soup,White cabbage,100.0,g
+Chicken soup,Chicken,150.0,g
+Chicken soup,Oil,30.0,g
+Chicken soup,Knor,1.0,pc
+Chicken soup,Black pepper,2.0,g
+Fish soup,Celery,50.0,g
+Fish soup,Leek,50.0,g
+Fish soup,Onion,100.0,g
+Fish soup,Garlic,20.0,g
+Fish soup,Ginger,20.0,g
+Fish soup,Carrot,200.0,g
+Fish soup,Pimento,100.0,g
+Fish soup,Fish,120.0,g
+Fish soup,Knor,1.0,pc
+Fish soup,Black pepper,2.0,g
+Fish soup,Oil,30.0,ml
+recipe_name,ingredient,quantity,unit
+Greek Salad -w/Feta,Tomato,150.0,g
+Greek Salad -w/Feta,Onion,100.0,g
+Greek Salad -w/Feta,Cucumber,150.0,g
+Greek Salad -w/Feta,Pimento,100.0,g
+Greek Salad -w/Feta,Green pepper,20.0,g
+Greek Salad -w/Feta,Feta cheese,150.0,g
+Greek Salad -w/Feta,Olive oil,20.0,g
+Greek Salad -w/Feta,Olive seed,20.0,g
+Greek Salad -w/Feta,Lemon,50.0,g
+Greek Salad -w/Feta,Salt,23.0,g
+Greek Salad -w/Feta,Black pepper,2.0,g
+Green salad,Lettuce,200.0,g
+Green salad,Cucumber,150.0,g
+Green salad,Onion,100.0,g
+Green salad,Olive oil,20.0,g
+Green salad,Lemon,1.0,pc
+Green salad,Black pepper,2.0,g
+Green salad,Honey,23.0,g
+Green salad,Avocado,300.0,g
+Chickpea salad,Tomato,150.0,g
+Chickpea salad,Cucumber,150.0,g
+Chickpea salad,Pimento,100.0,g
+Chickpea salad,Onion,100.0,g
+Chickpea salad,Parsley,20.0,g
+Chickpea salad,Mint,10.0,g
+Chickpea salad,Chickpea,200.0,g
+Chickpea salad,Lemon,1.0,pc
+Chickpea salad,Olive oil,20.0,g
+Chickpea salad,Salt,23.0,g
+Chicken salad,Lettuce,150.0,g
+Chicken salad,Tomato,150.0,g
+Chicken salad,Pimento,150.0,g
+Chicken salad,Green pepper,20.0,g
+Chicken salad,Onion,100.0,g
+Chicken salad,Chicken,150.0,g
+Chicken salad,Olive seed,30.0,g
+Chicken salad,Egg,1.0,pc
+Chicken salad,Mustard,23.0,g
+Chicken salad,Salt,23.0,g
+Chicken salad,Lemon,1.0,pc
+Chicken salad,Oil,30.0,ml
+Tuna salad,Lettuce,150.0,g
+Tuna salad,Tomato,150.0,g
+Tuna salad,Cucumber,150.0,g
+Tuna salad,Green pepper,20.0,g
+Tuna salad,Onion,100.0,g
+Tuna salad,Olive seed,30.0,g
+Tuna salad,Tuna,1.0,pc
+Tuna salad,Mustard,23.0,g
+Tuna salad,Salt,23.0,g
+Tuna salad,Lemon,1.0,pc
+Tuna salad,Oil,30.0,ml
+recipe_name,ingredient,quantity,unit
+Spaghetti pesto,Butter,100.0,g
+Spaghetti pesto,Flour,20.0,g
+Spaghetti pesto,Pesto,10.0,g
+Spaghetti pesto,Milk,250.0,ml
+Spaghetti pesto,Knor,1.0,pc
+Spaghetti pesto,Black pepper,2.0,g
+Spaghetti pesto,Spaghetti,250.0,g
+Spaghetti pesto,Garlic,10.0,g
+Spaghetti tomato,Onion,100.0,g
+Spaghetti tomato,Tomato,500.0,g
+Spaghetti tomato,Garlic,20.0,g
+Spaghetti tomato,Oil,30.0,g
+Spaghetti tomato,Knor,1.0,pc
+Spaghetti tomato,Black pepper,2.0,g
+Spaghetti tomato,Spaghetti,250.0,g
+Spaghetti tomato,Rozemary,23.0,g
+Spaghetti bolognese,Meat,150.0,g
+Spaghetti bolognese,Leek,50.0,g
+Spaghetti bolognese,Onion,100.0,g
+Spaghetti bolognese,Carrot,50.0,g
+Spaghetti bolognese,Garlic,20.0,g
+Spaghetti bolognese,Butter,20.0,g
+Spaghetti bolognese,Oil,30.0,ml
+Spaghetti bolognese,Tomato,300.0,g
+Spaghetti bolognese,Tomato pest,10.0,g
+Spaghetti bolognese,Knor,1.0,pc
+Spaghetti bolognese,Rozemary,23.0,g
+Spaghetti bolognese,Black pepper,23.0,g
+Vegetable lasagna,Leek,50.0,g
+Vegetable lasagna,Onion,100.0,g
+Vegetable lasagna,Tomato,500.0,g
+Vegetable lasagna,Garlic,20.0,g
+Vegetable lasagna,Tomato pest,100.0,g
+Vegetable lasagna,Rozemary,23.0,g
+Vegetable lasagna,Knor,1.0,pc
+Vegetable lasagna,Oil,30.0,ml
+Vegetable lasagna,Butter,100.0,g
+Vegetable lasagna,Flour,300.0,g
+Vegetable lasagna,Milk,250.0,ml
+Vegetable lasagna,Egg,3.0,pc
+Beef lasagna,Butter,100.0,g
+Beef lasagna,Leek,50.0,g
+Beef lasagna,Onion,100.0,g
+Beef lasagna,Carrot,100.0,g
+Beef lasagna,Beef,200.0,g
+Beef lasagna,Garlic,20.0,g
+Beef lasagna,Rozemary,6.0,g
+Beef lasagna,Oil,30.0,ml
+Beef lasagna,Tomato pest,100.0,g
+Beef lasagna,Tomato,500.0,g
+Beef lasagna,Flour,300.0,g
+Tuna lasagna,Tuna,1.0,pc
+Tuna lasagna,Onion,100.0,g
+Tuna lasagna,Tomato,500.0,g
+Tuna lasagna,Tomato pest,100.0,g
+Tuna lasagna,Garlic,20.0,g
+Tuna lasagna,Rozemary,23.0,g
+Tuna lasagna,Knor,1.0,pc
+Tuna lasagna,Oil,30.0,ml
+Tuna lasagna,Butter,100.0,g
+Tuna lasagna,Cheese,300.0,g
+Vegetable curry,Onion,500.0,g
+Vegetable curry,Tomato,300.0,g
+Vegetable curry,Leek,50.0,g
+Vegetable curry,Turmeric,10.0,g
+Vegetable curry,Cumin,10.0,g
+Vegetable curry,Coriander,10.0,g
+Vegetable curry,Knor,1.0,pc
+Vegetable curry,Rozemary,23.0,g
+Vegetable curry,Carrot,150.0,g
+Vegetable curry,Zucchini,150.0,g
+Vegetable curry,Broccoli,150.0,g
+Vegetable curry,Cauliflower,150.0,g
+Chicken curry,Onion,500.0,g
+Chicken curry,Tomato,300.0,g
+Chicken curry,Leek,50.0,g
+Chicken curry,Turmeric,10.0,g
+Chicken curry,Cumin,10.0,g
+Chicken curry,Coriander,10.0,g
+Chicken curry,Knor,1.0,pc
+Chicken curry,Butter,50.0,g
+Chicken curry,Milk,100.0,g
+Chicken curry,Chicken,150.0,g
+Chicken curry,Curry powder,10.0,g
+Grilled Nile perch,Nile perch,150.0,g
+Grilled Nile perch,Mustard,23.0,g
+Grilled Nile perch,Soya,10.0,g
+Grilled Nile perch,Black pepper,23.0,g
+Grilled Nile perch,Rozemary,23.0,g
+Grilled Nile perch,Lemon,1.0,pc
+Grilled Nile perch,Oil,50.0,ml
+Grilled Nile perch,Coriander,23.0,g
+Grilled Nile perch,Carrot,200.0,g
+Grilled Nile perch,Zucchini,200.0,g
+Grilled Nile perch,Cauliflower,200.0,g
+Grilled Nile perch,Broccoli,200.0,g
+Grilled Nile perch,Garlic,20.0,g
+recipe_name,ingredient,quantity,unit
+Cheese sandwich,Bread,150.0,g
+Cheese sandwich,Cream cheese,20.0,g
+Cheese sandwich,Tomato,150.0,g
+Cheese sandwich,Provoloni cheese,100.0,g
+Cheese sandwich,Oregano,2.0,g
+Cheese sandwich,Potato,450.0,g
+Cheese sandwich,Salt,23.0,g
+Cheese sandwich,Oil,30.0,ml
+Cheese sandwich,Rozemary,2.0,g
+Tuna Sandwich,Onion,100.0,g
+Tuna Sandwich,Tomato,100.0,g
+Tuna Sandwich,Green pepper,20.0,g
+Tuna Sandwich,Tuna,1.0,pc
+Tuna Sandwich,Black pepper,23.0,g
+Tuna Sandwich,Salt,2.0,g
+Tuna Sandwich,Pesto,10.0,g
+Tuna Sandwich,Ketchup,10.0,ml
+Tuna Sandwich,Bread,150.0,g
+Chicken Sandwich,Bread,250.0,g
+Chicken Sandwich,Chicken,150.0,g
+Chicken Sandwich,Mustard,23.0,g
+Chicken Sandwich,Black pepper,23.0,g
+Chicken Sandwich,Rozemary,23.0,g
+Chicken Sandwich,Soya sauce,10.0,ml
+Chicken Sandwich,Oil,30.0,ml
+Chicken Sandwich,Tomato,100.0,g
+Chicken Sandwich,Onion,100.0,g
+Chicken Sandwich,Cream cheese,20.0,g
+Steak Sandwich,Beef,150.0,g
+Steak Sandwich,Soya sauce,10.0,g
+Steak Sandwich,Black pepper,23.0,g
+Steak Sandwich,Rozemary,23.0,g
+Steak Sandwich,Oil,30.0,g
+Steak Sandwich,Tomato,100.0,g
+Steak Sandwich,Onion,100.0,g
+Steak Sandwich,Cheese,100.0,g
+Steak Sandwich,Cream cheese,20.0,g
+Steak Sandwich,Bread,150.0,g
+Steak Sandwich,Provoloni cheese,50.0,g
+Felafel Wrap,Chickpea,200.0,g
+Felafel Wrap,Garlic,20.0,g
+Felafel Wrap,Parsley,50.0,g
+Felafel Wrap,Coriander,23.0,g
+Felafel Wrap,Cumin,23.0,g
+Felafel Wrap,Rozemary,23.0,g
+Felafel Wrap,Black pepper,23.0,g
+Felafel Wrap,Oil,200.0,g
+Felafel Wrap,Flour,200.0,g
+Felafel Wrap,Yeast,2.0,g
+Felafel Wrap,Salt,2.0,g
+Felafel Wrap,Lettuce,100.0,g
+Felafel Wrap,Cucumber,100.0,g
+Avocado /Salad wrap,Flour,200.0,g
+Avocado /Salad wrap,Yeast,2.0,g
+Avocado /Salad wrap,Salt,2.0,g
+Avocado /Salad wrap,Lettuce,100.0,g
+Avocado /Salad wrap,Cucumber,100.0,g
+Avocado /Salad wrap,Tomato,100.0,g
+Avocado /Salad wrap,Onion,50.0,g
+Avocado /Salad wrap,Green pepper,20.0,g
+Avocado /Salad wrap,Pimento,50.0,g
+Avocado /Salad wrap,Lemon,1.0,pc
+Avocado /Salad wrap,Oil,30.0,ml
+Avocado /Salad wrap,Black pepper,23.0,g
+Avocado /Salad wrap,Avocado,400.0,g
+Chicken wrap,Flour,200.0,g
+Chicken wrap,Yeast,2.0,g
+Chicken wrap,Salt,2.0,g
+Chicken wrap,Oil,30.0,ml
+Chicken wrap,Chicken,150.0,g
+Chicken wrap,Mustard,23.0,g
+Chicken wrap,Black pepper,23.0,g
+Chicken wrap,Soya sauce,10.0,g
+Chicken wrap,Rozemary,23.0,g
+Chicken wrap,Tomato,50.0,g
+Chicken wrap,Onion,50.0,g
+Chicken wrap,Pimento,50.0,g
+Chicken wrap,Avocado,300.0,g
+Beef burger,Beef,150.0,g
+Beef burger,Onion,50.0,g
+Beef burger,Parsley,20.0,g
+Beef burger,Green pepper,20.0,g
+Beef burger,Garlic,20.0,g
+Beef burger,Black pepper,23.0,g
+Beef burger,Berbera,23.0,g
+Beef burger,Rozemary,23.0,g
+Beef burger,Salt,23.0,g
+Beef burger,Egg,1.0,pc
+Beef burger,Bread,150.0,g
+Beef burger,Cream cheese,20.0,g
+Beef burger,Oil,30.0,g
+recipe_name,ingredient,quantity,unit
+Margarita pizza,Flour,250.0,g
+Margarita pizza,Yeast,2.0,g
+Margarita pizza,Salt,2.0,g
+Margarita pizza,Sugar,2.0,g
+Margarita pizza,Oil,50.0,g
+Margarita pizza,Tomato,400.0,g
+Margarita pizza,Garlic,20.0,g
+Margarita pizza,Oregano,1.0,g
+Margarita pizza,Black pepper,23.0,g
+Margarita pizza,Knor,1.0,pc
+Margarita pizza,Cheese,300.0,g
+Vegetable pizza,Flour,250.0,g
+Vegetable pizza,Yeast,2.0,g
+Vegetable pizza,Salt,2.0,g
+Vegetable pizza,Sugar,2.0,g
+Vegetable pizza,Oil,50.0,g
+Vegetable pizza,Tomato,400.0,g
+Vegetable pizza,Garlic,20.0,g
+Vegetable pizza,Onion,100.0,g
+Vegetable pizza,Carrot,100.0,g
+Vegetable pizza,Zucchini,100.0,g
+Vegetable pizza,Broccoli,100.0,g
+Vegetable pizza,Cauliflower,100.0,g
+Vegetable pizza,Pimento,100.0,g
+Tuna /pesto pizza,Flour,250.0,g
+Tuna /pesto pizza,Yeast,2.0,g
+Tuna /pesto pizza,Salt,2.0,g
+Tuna /pesto pizza,Sugar,2.0,g
+Tuna /pesto pizza,Tomato,500.0,g
+Tuna /pesto pizza,Garlic,20.0,g
+Tuna /pesto pizza,Onion,150.0,g
+Tuna /pesto pizza,Oil,50.0,g
+Tuna /pesto pizza,Pimento,150.0,g
+Tuna /pesto pizza,Cheese,200.0,g
+Tuna /pesto pizza,Tuna,1.0,pc
+Tuna /pesto pizza,Black pepper,2.0,g
+Beef pizza,Flour,250.0,g
+Beef pizza,Yeast,2.0,g
+Beef pizza,Salt,3.0,g
+Beef pizza,Sugar,3.0,g
+Beef pizza,Oregano,1.0,g
+Beef pizza,Cheese,200.0,g
+Beef pizza,Beef,150.0,g
+Beef pizza,Oil,50.0,g
+Beef pizza,Tomato,400.0,g
+Beef pizza,Onion,100.0,g
+Beef pizza,Garlic,20.0,g
+Beef pizza,Rozemary,2.0,g
+Beef pizza,Black pepper,2.0,g
+Chicken pizza,Flour,250.0,g
+Chicken pizza,Yeast,2.0,g
+Chicken pizza,Salt,4.0,g
+Chicken pizza,Sugar,4.0,g
+Chicken pizza,Oil,50.0,g
+Chicken pizza,Tomato,400.0,g
+Chicken pizza,Garlic,20.0,g
+Chicken pizza,Onion,100.0,g
+Chicken pizza,Rozemary,2.0,g
+Chicken pizza,Chicken,150.0,g
+Chicken pizza,Cheese,200.0,g
+Chicken pizza,Knor,1.0,pc
+Shiro,Onion,100.0,g
+Shiro,Tomato,300.0,g
+Shiro,Oil,100.0,g
+Shiro,Shiro,200.0,g
+Shiro,Knor,1.0,pc
+Shiro,Garlic,20.0,g
+Shiro,Injera,1.0,pc
+Fasting Firfir,Onion,200.0,g
+Fasting Firfir,Tomato,200.0,g
+Fasting Firfir,Berbere,20.0,g
+Fasting Firfir,Garlic,20.0,g
+Fasting Firfir,Oil,100.0,g
+Fasting Firfir,Rozemary,23.0,g
+Fasting Firfir,Condiment,23.0,g
+Fasting Firfir,Knor,1.0,pc
+Fasting Firfir,Injera,1.0,pc
+Fasting Firfir,Salt,23.0,g
+Tibs/Meat firfir,Onion,200.0,g
+Tibs/Meat firfir,Tomato,200.0,g
+Tibs/Meat firfir,Berbere,20.0,g
+Tibs/Meat firfir,Garlic,20.0,g
+Tibs/Meat firfir,Oil,100.0,g
+Tibs/Meat firfir,Rozemary,23.0,g
+Tibs/Meat firfir,Condiment,23.0,g
+Tibs/Meat firfir,Knor,1.0,pc
+Tibs/Meat firfir,Salt,23.0,g
+Tibs/Meat firfir,Meat,150.0,g
+Tibs/Meat firfir,Egg,1.0,pc
+Tibs,Meat,150.0,g
+Tibs,Rozemary,23.0,g
+Tibs,Soya sauce,10.0,g
+Tibs,Black pepper,20.0,g
+Tibs,Onion,50.0,g
+Tibs,Tomato,100.0,g
+Tibs,Green pepper,20.0,g
+Tibs,Oil,50.0,ml
+Tibs,Garlic,23.0,g
+recipe_name,ingredient,quantity,unit
+Papaya-Mango,Papaya,450.0,g
+Papaya-Mango,Lemon,1.0,pc
+Papaya-Mango,Honey,20.0,g
+Orange,Orange,1.0,kg
+Pineapple,Pineapple,670.0,g
+Pineapple,Honey,20.0,g
+Carrot-Spinach or cucumber,Carrot,600.0,g
+Carrot-Spinach or cucumber,Orange,350.0,g
+Carrot-Spinach or cucumber,Ginger,20.0,g
+Carrot-Spinach or cucumber,Honey,50.0,g
+Spinach juice,Spinach,200.0,g
+Spinach juice,Orange,350.0,g
+Spinach juice,Ginger,20.0,g
+Spinach juice,Honey,50.0,g
+Cucumber,Cucumber,600.0,g
+Cucumber,Orange,351.0,g
+Cucumber,Ginger,20.0,g
+Cucumber,Honey,50.0,g
