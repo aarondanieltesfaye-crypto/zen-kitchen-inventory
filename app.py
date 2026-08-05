@@ -15,11 +15,15 @@ st.set_page_config(
 if not os.path.exists("data"):
     os.makedirs("data")
 
-# --- HELPER: FIX OLD CATEGORIES AND DATA ---
+# --- HELPER: FIX OLD CATEGORIES ---
 def _fix_legacy_categories(df):
     """
     Ensures legacy CSV data uses the new categories and fixes known errors.
     """
+    # Handle case where dataframe is empty
+    if df.empty:
+        return df
+        
     # 1. Rename old categories to new ones
     category_map = {
         'Vegetable': 'Produce',
@@ -30,18 +34,19 @@ def _fix_legacy_categories(df):
     df['category'] = df['category'].replace(category_map)
 
     # 2. Force specific erroneous items to the correct category (FIXES NILE PERCH ERROR)
-    df.loc[df['item'].str.strip() == 'Nile perch', 'category'] = 'Proteins'
-    df.loc[df['item'].str.strip() == 'Nile Perch', 'category'] = 'Proteins'
-    df.loc[df['item'].str.strip() == 'Nile pearch', 'category'] = 'Proteins'
-    df.loc[df['item'].str.strip() == 'Egg', 'category'] = 'Dairy & Eggs'
-    df.loc[df['item'].str.strip() == 'Eggs', 'category'] = 'Dairy & Eggs'
+    # We use exact matching instead of .str.strip() to avoid crashing if data has nulls
+    df.loc[df['item'] == 'Nile perch', 'category'] = 'Proteins'
+    df.loc[df['item'] == 'Nile Perch', 'category'] = 'Proteins'
+    df.loc[df['item'] == 'Nile pearch', 'category'] = 'Proteins'
+    df.loc[df['item'] == 'Egg', 'category'] = 'Dairy & Eggs'
+    df.loc[df['item'] == 'Eggs', 'category'] = 'Dairy & Eggs'
     
     # 3. Fix other mis-categorized items
-    df.loc[df['item'].str.strip() == 'Table Butter', 'category'] = 'Dairy & Eggs'
-    df.loc[df['item'].str.strip() == 'Milk', 'category'] = 'Dairy & Eggs'
-    df.loc[df['item'].str.strip() == 'Sugar', 'category'] = 'Dry Goods'
-    df.loc[df['item'].str.strip() == 'Chicken Breast', 'category'] = 'Proteins'
-    df.loc[df['item'].str.strip() == 'Beef', 'category'] = 'Proteins'
+    df.loc[df['item'] == 'Table Butter', 'category'] = 'Dairy & Eggs'
+    df.loc[df['item'] == 'Milk', 'category'] = 'Dairy & Eggs'
+    df.loc[df['item'] == 'Sugar', 'category'] = 'Dry Goods'
+    df.loc[df['item'] == 'Chicken Breast', 'category'] = 'Proteins'
+    df.loc[df['item'] == 'Beef', 'category'] = 'Proteins'
     return df
 
 # --- DATA LOADING FUNCTIONS ---
@@ -50,35 +55,28 @@ def _fix_legacy_categories(df):
 def load_inventory():
     file_path = "data/inventory.csv"
     
+    # If the file exists, try to read it
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         try:
             df = pd.read_csv(file_path)
-            # ✅ FIX: Automatically repair the loaded data
             df = _fix_legacy_categories(df)
-            df.to_csv(file_path, index=False, encoding='utf-8') # Save the fix back to disk
-            return df
-        except pd.errors.EmptyDataError:
-            # Create default inventory if CSV is empty/corrupted
-            df = pd.DataFrame({
-                'item': ['Chicken Breast', 'Nile Perch', 'Eggs', 'Onion', 'Tomato', 'Milk', 'Butter', 'Flour', 'White Rice', 'Cooking Oil', 'Salt', 'Black Pepper'],
-                'category': ['Proteins', 'Proteins', 'Dairy & Eggs', 'Produce', 'Produce', 'Dairy & Eggs', 'Dairy & Eggs', 'Dry Goods', 'Dry Goods', 'Dry Goods', 'Spices & Condiments', 'Spices & Condiments'],
-                'unit': ['kg', 'kg', 'pc', 'kg', 'kg', 'l', 'kg', 'kg', 'kg', 'l', 'kg', 'g'],
-                'quantity': [15.0, 5.0, 60.0, 20.0, 15.0, 10.0, 2.0, 25.0, 30.0, 20.0, 5.0, 500.0],
-                'reorder_level': [2.0, 1.0, 12.0, 3.0, 3.0, 2.0, 0.5, 5.0, 5.0, 4.0, 1.0, 100.0]
-            })
             df.to_csv(file_path, index=False, encoding='utf-8')
             return df
-    else:
-        # Create default inventory if file doesn't exist
-        df = pd.DataFrame({
-            'item': ['Chicken Breast', 'Nile Perch', 'Eggs', 'Onion', 'Tomato', 'Milk', 'Butter', 'Flour', 'White Rice', 'Cooking Oil', 'Salt', 'Black Pepper'],
-            'category': ['Proteins', 'Proteins', 'Dairy & Eggs', 'Produce', 'Produce', 'Dairy & Eggs', 'Dairy & Eggs', 'Dry Goods', 'Dry Goods', 'Dry Goods', 'Spices & Condiments', 'Spices & Condiments'],
-            'unit': ['kg', 'kg', 'pc', 'kg', 'kg', 'l', 'kg', 'kg', 'kg', 'l', 'kg', 'g'],
-            'quantity': [15.0, 5.0, 60.0, 20.0, 15.0, 10.0, 2.0, 25.0, 30.0, 20.0, 5.0, 500.0],
-            'reorder_level': [2.0, 1.0, 12.0, 3.0, 3.0, 2.0, 0.5, 5.0, 5.0, 4.0, 1.0, 100.0]
-        })
-        df.to_csv(file_path, index=False, encoding='utf-8')
-        return df
+        except Exception:
+            # If ANYTHING goes wrong while reading (corrupted file, wrong headers, etc.), 
+            # force the system to create a brand new default file.
+            pass 
+            
+    # Create default inventory (either if file doesn't exist, or if reading it failed)
+    df = pd.DataFrame({
+        'item': ['Chicken Breast', 'Nile Perch', 'Eggs', 'Onion', 'Tomato', 'Milk', 'Butter', 'Flour', 'White Rice', 'Cooking Oil', 'Salt', 'Black Pepper'],
+        'category': ['Proteins', 'Proteins', 'Dairy & Eggs', 'Produce', 'Produce', 'Dairy & Eggs', 'Dairy & Eggs', 'Dry Goods', 'Dry Goods', 'Dry Goods', 'Spices & Condiments', 'Spices & Condiments'],
+        'unit': ['kg', 'kg', 'pc', 'kg', 'kg', 'l', 'kg', 'kg', 'kg', 'l', 'kg', 'g'],
+        'quantity': [15.0, 5.0, 60.0, 20.0, 15.0, 10.0, 2.0, 25.0, 30.0, 20.0, 5.0, 500.0],
+        'reorder_level': [2.0, 1.0, 12.0, 3.0, 3.0, 2.0, 0.5, 5.0, 5.0, 4.0, 1.0, 100.0]
+    })
+    df.to_csv(file_path, index=False, encoding='utf-8')
+    return df
 
 @st.cache_data
 def load_recipes():
@@ -87,26 +85,18 @@ def load_recipes():
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         try:
             return pd.read_csv(file_path)
-        except pd.errors.EmptyDataError:
-            # Default Recipes
-            df = pd.DataFrame({
-                'recipe_name': ['Grilled Fish', 'Grilled Fish', 'Grilled Fish', 'Grilled Fish', 'Classic Omelette', 'Classic Omelette', 'Classic Omelette'],
-                'ingredient': ['Nile Perch', 'Salt', 'Black Pepper', 'Cooking Oil', 'Eggs', 'Butter', 'Salt'],
-                'quantity': [200.0, 5.0, 2.0, 10.0, 2.0, 5.0, 1.0],
-                'unit': ['g', 'g', 'g', 'ml', 'pc', 'g', 'g']
-            })
-            df.to_csv(file_path, index=False, encoding='utf-8')
-            return df
-    else:
-        # Default Recipes
-        df = pd.DataFrame({
-            'recipe_name': ['Grilled Fish', 'Grilled Fish', 'Grilled Fish', 'Grilled Fish', 'Classic Omelette', 'Classic Omelette', 'Classic Omelette'],
-            'ingredient': ['Nile Perch', 'Salt', 'Black Pepper', 'Cooking Oil', 'Eggs', 'Butter', 'Salt'],
-            'quantity': [200.0, 5.0, 2.0, 10.0, 2.0, 5.0, 1.0],
-            'unit': ['g', 'g', 'g', 'ml', 'pc', 'g', 'g']
-        })
-        df.to_csv(file_path, index=False, encoding='utf-8')
-        return df
+        except:
+            pass
+            
+    # Default Recipes
+    df = pd.DataFrame({
+        'recipe_name': ['Grilled Fish', 'Grilled Fish', 'Grilled Fish', 'Grilled Fish', 'Classic Omelette', 'Classic Omelette', 'Classic Omelette'],
+        'ingredient': ['Nile Perch', 'Salt', 'Black Pepper', 'Cooking Oil', 'Eggs', 'Butter', 'Salt'],
+        'quantity': [200.0, 5.0, 2.0, 10.0, 2.0, 5.0, 1.0],
+        'unit': ['g', 'g', 'g', 'ml', 'pc', 'g', 'g']
+    })
+    df.to_csv(file_path, index=False, encoding='utf-8')
+    return df
 
 @st.cache_data
 def load_buffet_recipes():
@@ -115,26 +105,18 @@ def load_buffet_recipes():
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         try:
             return pd.read_csv(file_path)
-        except pd.errors.EmptyDataError:
-            # Default Buffet Menu
-            df = pd.DataFrame({
-                'buffet_name': ['Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast'],
-                'ingredient': ['Eggs', 'Milk', 'Butter', 'Flour', 'Salt'],
-                'quantity': [1.0, 100.0, 10.0, 50.0, 1.0],
-                'unit': ['pc', 'ml', 'g', 'g', 'g']
-            })
-            df.to_csv(file_path, index=False, encoding='utf-8')
-            return df
-    else:
-        # Default Buffet Menu
-        df = pd.DataFrame({
-            'buffet_name': ['Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast'],
-            'ingredient': ['Eggs', 'Milk', 'Butter', 'Flour', 'Salt'],
-            'quantity': [1.0, 100.0, 10.0, 50.0, 1.0],
-            'unit': ['pc', 'ml', 'g', 'g', 'g']
-        })
-        df.to_csv(file_path, index=False, encoding='utf-8')
-        return df
+        except:
+            pass
+            
+    # Default Buffet Menu
+    df = pd.DataFrame({
+        'buffet_name': ['Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast', 'Continental Breakfast'],
+        'ingredient': ['Eggs', 'Milk', 'Butter', 'Flour', 'Salt'],
+        'quantity': [1.0, 100.0, 10.0, 50.0, 1.0],
+        'unit': ['pc', 'ml', 'g', 'g', 'g']
+    })
+    df.to_csv(file_path, index=False, encoding='utf-8')
+    return df
 
 # --- NEW: LOAD ORDER HISTORY ---
 @st.cache_data
@@ -143,12 +125,10 @@ def load_order_history():
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         return pd.read_csv(file_path)
     else:
-        # Return empty dataframe with correct columns if file doesn't exist
         return pd.DataFrame(columns=['timestamp', 'item', 'quantity', 'unit'])
 
 # --- SAVE FUNCTIONS ---
 def save_inventory(df):
-    # Ensure our save function also fixes categories just in case
     df = _fix_legacy_categories(df)
     df.to_csv("data/inventory.csv", index=False, encoding='utf-8')
     st.cache_data.clear()
@@ -161,24 +141,17 @@ def save_buffet_recipes(df):
     df.to_csv("data/buffet_recipes.csv", index=False, encoding='utf-8')
     st.cache_data.clear()
 
-# --- NEW: SAVE ORDER HISTORY ---
 def log_order_history(ingredients_list):
-    """
-    Appends deducted ingredients to order_history.csv
-    """
     file_path = "data/order_history.csv"
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    # Load existing history
     if os.path.exists(file_path):
         hist_df = pd.read_csv(file_path)
     else:
         hist_df = pd.DataFrame(columns=['timestamp', 'item', 'quantity', 'unit'])
     
-    # Create new rows
     new_rows = []
     for ing in ingredients_list:
-        # Convert to float just in case
         try:
             qty = float(ing['quantity'])
         except:
@@ -190,7 +163,6 @@ def log_order_history(ingredients_list):
             'unit': ing['unit']
         })
     
-    # Append and save
     if new_rows:
         new_df = pd.DataFrame(new_rows)
         hist_df = pd.concat([hist_df, new_df], ignore_index=True)
@@ -198,13 +170,7 @@ def log_order_history(ingredients_list):
         st.cache_data.clear()
 
 # --- INVENTORY DEDUCTION FUNCTION ---
-
 def deduct_inventory(inventory_df, ingredients_list):
-    """
-    Deduct ingredients from inventory.
-    ingredients_list: list of dicts [{'item': 'Onion', 'quantity': 100, 'unit': 'g'}, ...]
-    Returns: (updated_inventory, messages, errors)
-    """
     messages = []
     errors = []
     
@@ -215,7 +181,6 @@ def deduct_inventory(inventory_df, ingredients_list):
         item_name = ingredient['item']
         unit_needed = ingredient['unit']
         
-        # Clean and convert recipe quantity
         try:
             qty_str = str(ingredient['quantity']).strip()
             if not qty_str or qty_str.lower() == 'nan':
@@ -225,7 +190,6 @@ def deduct_inventory(inventory_df, ingredients_list):
             errors.append(f"❌ Recipe data for '{item_name}' has an invalid quantity. Fix it in Edit Data!")
             continue
             
-        # Find item in inventory
         mask = updated_df['item'] == item_name
         if not mask.any():
             errors.append(f"❌ '{item_name}' not found in inventory!")
@@ -239,7 +203,6 @@ def deduct_inventory(inventory_df, ingredients_list):
             
         current_unit = updated_df.loc[mask, 'unit'].values[0]
         
-        # Unit conversion
         if unit_needed != current_unit:
             if unit_needed == 'g' and current_unit == 'kg':
                 qty_needed = qty_needed / 1000
@@ -261,7 +224,6 @@ def deduct_inventory(inventory_df, ingredients_list):
     return updated_df, messages, errors
 
 # --- UI ---
-
 st.title("🍽️ Zen Kitchen Inventory Management")
 st.markdown("---")
 
@@ -364,7 +326,6 @@ elif page == "📝 Take Order":
                     st.error(error)
             else:
                 save_inventory(updated_inventory)
-                # NEW: Log the history
                 log_order_history(ingredients_list)
                 
                 st.success(f"✅ Order for {quantity}x {selected_recipe} confirmed!")
@@ -410,7 +371,6 @@ elif page == "🍽️ Buffet Order":
                     st.error(error)
             else:
                 save_inventory(updated_inventory)
-                # NEW: Log the history
                 log_order_history(total_guest_ingredients)
                 
                 st.success(f"✅ Buffet for {num_guests} guests confirmed!")
@@ -434,7 +394,6 @@ elif page == "✏️ Edit Data":
             key="inventory_editor"
         )
         
-        # Quick Add Inventory Item
         with st.expander("➕ Quick Add Item"):
             col1, col2 = st.columns(2)
             with col1:
@@ -481,7 +440,6 @@ elif page == "✏️ Edit Data":
         with st.expander("➕ Add New Recipe"):
             col1, col2 = st.columns(2)
             with col1:
-                # ✅ FIXED: Added unique keys
                 new_recipe_name = st.text_input("Recipe Name", key="add_recipe_name")
             with col2:
                 new_ingredient = st.text_input("Ingredient", key="add_recipe_ingredient")
@@ -530,10 +488,8 @@ elif page == "✏️ Edit Data":
         with st.expander("➕ Add New Buffet Recipe"):
             col1, col2 = st.columns(2)
             with col1:
-                # ✅ FIXED: Added unique keys
                 new_buffet_name = st.text_input("Buffet Name", key="add_buffet_name")
             with col2:
-                # ✅ FIXED: This is Line 441! Added `key` to prevent duplicate ID error.
                 new_buffet_ingredient = st.text_input("Ingredient", key="add_buffet_ingredient")
             
             col1, col2, col3 = st.columns(3)
@@ -572,28 +528,23 @@ elif page == "✏️ Edit Data":
             except Exception as e:
                 st.error(f"❌ Error saving: {e}")
 
-# --- PAGE 5: CONSUMPTION ANALYTICS (NEW!) ---
+# --- PAGE 5: CONSUMPTION ANALYTICS ---
 elif page == "📈 Consumption Analytics":
     st.header("📈 Consumption Analytics")
     
-    # Load history
     history_df = load_order_history()
     
     if history_df.empty:
         st.info("No orders have been placed yet. Start taking orders to see consumption analytics here!")
     else:
-        # Calculate total quantities consumed per item
         consumption = history_df.groupby('item')['quantity'].sum().reset_index()
         consumption = consumption.sort_values(by='quantity', ascending=False)
         
-        # Define keywords to identify beverages (expand this list if needed)
         beverage_keywords = ['juice', 'orange', 'pineapple', 'papaya', 'mango', 'coffee', 'tea', 'water', 'soda', 'coke', 'sprit', 'lemonade', 'milk']
         
-        # Split data into Food and Beverages
         food_df = consumption[~consumption['item'].str.lower().str.contains('|'.join(beverage_keywords))]
         beverage_df = consumption[consumption['item'].str.lower().str.contains('|'.join(beverage_keywords))]
         
-        # Get top 10
         top_food = food_df.head(10)
         top_beverages = beverage_df.head(10)
         
