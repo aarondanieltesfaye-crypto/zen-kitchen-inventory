@@ -1,0 +1,746 @@
+
+buffet_name,ingredient,quantity,unit
+Mexican Buffet (Lunch),Chicken,350.0,g
+Mexican Buffet (Lunch),Mustard,5.0,g
+Mexican Buffet (Lunch),Black pepper,5.0,g
+Mexican Buffet (Lunch),Soya Sauce,10.0,g
+Mexican Buffet (Lunch),Garlic,10.0,g
+Mexican Buffet (Lunch),Rosmery,5.0,g
+Mexican Buffet (Lunch),Flour,500.0,g
+Mexican Buffet (Lunch),Yeast,5.0,g
+Mexican Buffet (Lunch),Oil,100.0,ml
+Mexican Buffet (Lunch),Cheese,150.0,g
+Mexican Buffet (Lunch),Salt,5.0,g
+Mexican Buffet (Lunch),Rice,300.0,g
+Mexican Buffet (Lunch),Onion,100.0,g
+Mexican Buffet (Lunch),Leek,50.0,g
+Mexican Buffet (Lunch),Celery,20.0,g
+Mexican Buffet (Lunch),Berbera,5.0,g
+Mexican Buffet (Lunch),Rozmery,5.0,g
+Mexican Buffet (Lunch),Coriandor,5.0,g
+Mexican Buffet (Lunch),Sweetcorn,100.0,g
+Mexican Buffet (Lunch),Beans,100.0,g
+Mexican Buffet (Lunch),Knor,1.0,pc
+Mexican Buffet (Lunch),Oil,50.0,ml
+Mexican Buffet (Lunch),Turmeric,5.0,g
+Mexican Buffet (Lunch),Cumin,5.0,g
+Mexican Buffet (Lunch),Tomato,150.0,g
+Mexican Buffet (Lunch),Flour,250.0,g
+Mexican Buffet (Lunch),Yeast,5.0,g
+Mexican Buffet (Lunch),Carrot,100.0,g
+Mexican Buffet (Lunch),Zucchin,50.0,g
+Mexican Buffet (Lunch),Cauliflower,100.0,g
+Mexican Buffet (Lunch),Broccoli,50.0,g
+Mexican Buffet (Lunch),Paprica,100.0,g
+Mexican Buffet (Lunch),Onion,50.0,g
+Mexican Buffet (Lunch),Leek,50.0,g
+Mexican Buffet (Lunch),Tomato,300.0,g
+Mexican Buffet (Lunch),Cheese,150.0,g
+Mexican Buffet (Lunch),Black pepper,5.0,g
+Mexican Buffet (Lunch),Tomato,400.0,g
+Mexican Buffet (Lunch),Onion,100.0,g
+Mexican Buffet (Lunch),Green pepper,20.0,g
+Mexican Buffet (Lunch),Pursly,10.0,g
+Mexican Buffet (Lunch),Lemon,50.0,g
+Mexican Buffet (Lunch),Oil,10.0,ml
+Mexican Buffet (Lunch),Mint,5.0,g
+Mexican Buffet (Lunch),Avocado,850.0,g
+Mexican Buffet (Lunch),Tomato,150.0,g
+Mexican Buffet (Lunch),Green pepper,20.0,g
+Mexican Buffet (Lunch),Lemon,50.0,g
+Mexican Buffet (Lunch),Black pepper,5.0,g
+Mexican Buffet (Lunch),Salt,5.0,g
+Mexican Buffet (Lunch),Coriandor,5.0,g
+Mexican Buffet (Lunch),Tomato,150.0,g
+Mexican Buffet (Lunch),Onion,100.0,g
+Mexican Buffet (Lunch),Pimento,100.0,g
+Mexican Buffet (Lunch),Cucumber,150.0,g
+Mexican Buffet (Lunch),Avocado,300.0,g
+Mexican Buffet (Lunch),Beans,200.0,g
+Mexican Buffet (Lunch),Salad,150.0,g
+Mexican Buffet (Lunch),Olive oil,50.0,ml
+Mexican Buffet (Lunch),Honey,10.0,g
+Mexican Buffet (Lunch),Mustard,10.0,g
+Mexican Buffet (Lunch),Lemon/Vinegar,50.0,ml
+Mexican Buffet (Lunch),Black Pepper,5.0,g
+Mexican Buffet (Lunch),Flour,500.0,g
+Mexican Buffet (Lunch),Yeast,5.0,g
+Mexican Buffet (Lunch),Salt,5.0,g
+Mexican Buffet (Lunch),Oil,20.0,ml
+Mexican Buffet (Lunch),Coffee,40.0,g
+Mexican Buffet (Lunch),Tea,5.0,g
+Mexican Buffet (Lunch),Ginger,50.0,g
+Mexican Buffet (Dinner),Leek,50.0,g
+Mexican Buffet (Dinner),Celery,20.0,g
+Mexican Buffet (Dinner),Onion,100.0,g
+Mexican Buffet (Dinner),Tomato,1.0,kg
+Mexican Buffet (Dinner),Tomato pest,20.0,g
+Mexican Buffet (Dinner),Ginger,20.0,g
+Mexican Buffet (Dinner),Garlic,10.0,g
+Mexican Buffet (Dinner),Knor,1.0,pc
+Mexican Buffet (Dinner),Beans,300.0,g
+Mexican Buffet (Dinner),Salad,150.0,g
+Mexican Buffet (Dinner),Tomato,200.0,g
+Mexican Buffet (Dinner),Purple cabbage,100.0,g
+Mexican Buffet (Dinner),Carrot,50.0,g
+Mexican Buffet (Dinner),Pimento,100.0,g
+Mexican Buffet (Dinner),Mustard,10.0,g
+Mexican Buffet (Dinner),Oil,20.0,ml
+Mexican Buffet (Dinner),Vinegar,20.0,ml
+Mexican Buffet (Dinner),Honey,5.0,g
+Mexican Buffet (Dinner),Salt,5.0,g
+Mexican Buffet (Dinner),Black pepper,5.0,g
+Mexican Buffet (Dinner),Rice,300.0,g
+Mexican Buffet (Dinner),Onion,100.0,g
+Mexican Buffet (Dinner),Leek,50.0,g
+Mexican Buffet (Dinner),Celery,20.0,g
+Mexican Buffet (Dinner),Garlic,10.0,g
+Mexican Buffet (Dinner),Berbera,5.0,g
+Mexican Buffet (Dinner),Rozmery,5.0,g
+Mexican Buffet (Dinner),Coriandor,5.0,g
+Mexican Buffet (Dinner),Sweetcorn,100.0,g
+Mexican Buffet (Dinner),Beans,100.0,g
+Mexican Buffet (Dinner),Knor,1.0,pack
+Mexican Buffet (Dinner),Oil,50.0,ml
+Mexican Buffet (Dinner),Turmeric,5.0,g
+Mexican Buffet (Dinner),Cumin,5.0,g
+Mexican Buffet (Dinner),Tomato,150.0,g
+Mexican Buffet (Dinner),Chicken,350.0,g
+Mexican Buffet (Dinner),Mustard,5.0,g
+Mexican Buffet (Dinner),Black pepper,5.0,g
+Mexican Buffet (Dinner),Soya Sauce,10.0,g
+Mexican Buffet (Dinner),Garlic,10.0,g
+Mexican Buffet (Dinner),Rosmery,5.0,g
+Mexican Buffet (Dinner),Flour,500.0,g
+Mexican Buffet (Dinner),Yeast,5.0,g
+Mexican Buffet (Dinner),Oil,100.0,g
+Mexican Buffet (Dinner),Cheese,150.0,g
+Mexican Buffet (Dinner),Salt,5.0,g
+Mexican Buffet (Dinner),Tomato,400.0,g
+Mexican Buffet (Dinner),Onion,100.0,g
+Mexican Buffet (Dinner),Green pepper,20.0,g
+Mexican Buffet (Dinner),Pursly,10.0,g
+Mexican Buffet (Dinner),Garlic,10.0,g
+Mexican Buffet (Dinner),Lemon,50.0,g
+Mexican Buffet (Dinner),Salt,5.0,g
+Mexican Buffet (Dinner),Black pepper,5.0,g
+Mexican Buffet (Dinner),Oil,10.0,ml
+Mexican Buffet (Dinner),Mint,5.0,g
+Mexican Buffet (Dinner),Flour,500.0,g
+Mexican Buffet (Dinner),Yeast,5.0,g
+Mexican Buffet (Dinner),Salt,5.0,g
+Mexican Buffet (Dinner),Oil,20.0,ml
+Indian Buffet (Lunch),Chicken,300.0,g
+Indian Buffet (Lunch),Rozmery,5.0,g
+Indian Buffet (Lunch),Black pepper,5.0,g
+Indian Buffet (Lunch),Soya sauce,10.0,g
+Indian Buffet (Lunch),Mustard,5.0,g
+Indian Buffet (Lunch),Onion,700.0,g
+Indian Buffet (Lunch),Tomato,400.0,g
+Indian Buffet (Lunch),Leek,50.0,g
+Indian Buffet (Lunch),Celery,50.0,g
+Indian Buffet (Lunch),Garlic,20.0,g
+Indian Buffet (Lunch),Tumeric,10.0,g
+Indian Buffet (Lunch),Cumin,10.0,g
+Indian Buffet (Lunch),Curry powder,10.0,g
+Indian Buffet (Lunch),Coriandor,5.0,g
+Indian Buffet (Lunch),Oil,50.0,ml
+Indian Buffet (Lunch),Milk,100.0,ml
+Indian Buffet (Lunch),Butter,20.0,g
+Indian Buffet (Lunch),Onion,400.0,g
+Indian Buffet (Lunch),Garlic,10.0,g
+Indian Buffet (Lunch),Ginger,10.0,g
+Indian Buffet (Lunch),Coriandorseed,5.0,g
+Indian Buffet (Lunch),Cumin seed,5.0,g
+Indian Buffet (Lunch),Berbera,5.0,g
+Indian Buffet (Lunch),Eggplant,500.0,g
+Indian Buffet (Lunch),Ric,300.0,g
+Indian Buffet (Lunch),Parprca,20.0,g
+Indian Buffet (Lunch),Pursly,20.0,g
+Indian Buffet (Lunch),Rice,300.0,g
+Indian Buffet (Lunch),Carrot,500.0,g
+Indian Buffet (Lunch),Zucchni,500.0,g
+Indian Buffet (Lunch),Onion,100.0,g
+Indian Buffet (Lunch),Oil,50.0,g
+Indian Buffet (Lunch),Salad,150.0,g
+Indian Buffet (Lunch),Tomato,200.0,g
+Indian Buffet (Lunch),Purple cabbage,100.0,g
+Indian Buffet (Lunch),Carrot,50.0,g
+Indian Buffet (Lunch),Pemento,100.0,g
+Indian Buffet (Lunch),Mustard,10.0,ml
+Indian Buffet (Lunch),Oil,20.0,ml
+Indian Buffet (Lunch),Vingar,20.0,ml
+Indian Buffet (Lunch),Honey,5.0,g
+Indian Buffet (Lunch),Salt,5.0,g
+Indian Buffet (Lunch),Coffee,40.0,g
+Indian Buffet (Lunch),Tea,5.0,g
+Indian Buffet (Lunch),Ginger,50.0,g
+Indian Buffet (Lunch),Celery,40.0,g
+Indian Buffet (Lunch),Ginger,20.0,g
+Indian Buffet (Lunch),Zucchini,1.0,kg
+Indian Buffet (Lunch),Black pepper,2.0,g
+Indian Buffet (Lunch),Cucumber,200.0,g
+Indian Buffet (Lunch),Onion,50.0,g
+Indian Buffet (Lunch),Pimento,100.0,g
+Indian Buffet (Lunch),Green pepper,20.0,g
+Indian Buffet (Lunch),Crackers,100.0,g
+Indian Buffet (Lunch),Mustard,10.0,g
+Indian Buffet (Lunch),Cumion,10.0,g
+Indian Buffet (Lunch),Coriandor,10.0,g
+Indian Buffet (Lunch),Zucchnni,300.0,g
+Indian Buffet (Lunch),Cauliflower,300.0,g
+Indian Buffet (Lunch),Broccoli,300.0,g
+Indian Buffet (Lunch),Chicken curry,300.0,g
+Indian Buffet (Lunch),Flour,500.0,g
+Indian Buffet (Lunch),Yeast,5.0,g
+buffet_name,ingredient,quantity,unit
+Indian Buffet (Dinner),Celery,40.0,g
+Indian Buffet (Dinner),Leek,50.0,g
+Indian Buffet (Dinner),Onion,100.0,g
+Indian Buffet (Dinner),Ginger,20.0,g
+Indian Buffet (Dinner),Zucchini,1.0,kg
+Indian Buffet (Dinner),Garlic,20.0,g
+Indian Buffet (Dinner),Oil,20.0,ml
+Indian Buffet (Dinner),Knor,1.0,pc
+Indian Buffet (Dinner),Black pepper,2.0,g
+Indian Buffet (Dinner),Tomato,200.0,g
+Indian Buffet (Dinner),Cucumber,200.0,g
+Indian Buffet (Dinner),Onion,50.0,g
+Indian Buffet (Dinner),Pimento,100.0,g
+Indian Buffet (Dinner),Green pepper,20.0,g
+Indian Buffet (Dinner),Salad,150.0,g
+Indian Buffet (Dinner),Crackers,100.0,g
+Indian Buffet (Dinner),Mustard,10.0,g
+Indian Buffet (Dinner),Rice,300.0,g
+Indian Buffet (Dinner),Onion,700.0,g
+Indian Buffet (Dinner),Tomato,400.0,g
+Indian Buffet (Dinner),Celery,50.0,g
+Indian Buffet (Dinner),Tumeric,10.0,g
+Indian Buffet (Dinner),Cumion,10.0,g
+Indian Buffet (Dinner),Coriandor,10.0,g
+Indian Buffet (Dinner),Curry powder,10.0,g
+Indian Buffet (Dinner),Oil,150.0,g
+Indian Buffet (Dinner),Zucchnni,300.0,g
+Indian Buffet (Dinner),Cauliflower,300.0,g
+Indian Buffet (Dinner),Broccoli,300.0,g
+Indian Buffet (Dinner),Chicken curry,300.0,g
+Indian Buffet (Dinner),Rozmery,5.0,g
+Indian Buffet (Dinner),Black pepper,5.0,g
+Indian Buffet (Dinner),Soya sauce,10.0,g
+Indian Buffet (Dinner),Mustard,5.0,g
+Indian Buffet (Dinner),Onion,700.0,g
+Indian Buffet (Dinner),Tomato,400.0,g
+Indian Buffet (Dinner),Garlic,20.0,g
+Indian Buffet (Dinner),Cumin,10.0,g
+Indian Buffet (Dinner),Curry powder,10.0,g
+Indian Buffet (Dinner),Knor,1.0,pc
+Indian Buffet (Dinner),Coriandor,5.0,g
+Indian Buffet (Dinner),Oil,50.0,ml
+Indian Buffet (Dinner),Milk,100.0,ml
+Indian Buffet (Dinner),Butter,20.0,g
+Indian Buffet (Dinner),Flour,500.0,g
+Indian Buffet (Dinner),Yeast,5.0,g
+Indian Buffet (Dinner),Salt,5.0,g
+Middle Eastern Buffet (Lunch),Onion,100.0,g
+Middle Eastern Buffet (Lunch),Garlic,10.0,g
+Middle Eastern Buffet (Lunch),Mixed spice,20.0,g
+Middle Eastern Buffet (Lunch),Cumion,5.0,g
+Middle Eastern Buffet (Lunch),Coryndor,5.0,g
+Middle Eastern Buffet (Lunch),Oil,50.0,ml
+Middle Eastern Buffet (Lunch),Carrot,300.0,g
+Middle Eastern Buffet (Lunch),Zucchini,300.0,g
+Middle Eastern Buffet (Lunch),Cauliflower,300.0,g
+Middle Eastern Buffet (Lunch),Brocoli,300.0,g
+Middle Eastern Buffet (Lunch),Fish,450.0,g
+Middle Eastern Buffet (Lunch),Onion,200.0,g
+Middle Eastern Buffet (Lunch),Tomato,200.0,g
+Middle Eastern Buffet (Lunch),Pimento,200.0,g
+Middle Eastern Buffet (Lunch),Mustard,5.0,g
+Middle Eastern Buffet (Lunch),Lemon,1.0,pc
+Middle Eastern Buffet (Lunch),Rozmery,5.0,g
+Middle Eastern Buffet (Lunch),Black pepper,5.0,g
+Middle Eastern Buffet (Lunch),Soya sauce,10.0,ml
+Middle Eastern Buffet (Lunch),Oil,50.0,g
+Middle Eastern Buffet (Lunch),Couscous,200.0,g
+Middle Eastern Buffet (Lunch),Tomato,100.0,g
+Middle Eastern Buffet (Lunch),Cucmber,100.0,g
+Middle Eastern Buffet (Lunch),Green papper,20.0,g
+Middle Eastern Buffet (Lunch),Pursly,20.0,g
+Middle Eastern Buffet (Lunch),Pimento,100.0,g
+Middle Eastern Buffet (Lunch),Salt,5.0,g
+Middle Eastern Buffet (Lunch),Oilive oil,10.0,ml
+Middle Eastern Buffet (Lunch),Honey,5.0,g
+Middle Eastern Buffet (Lunch),Chickepea,500.0,g
+Middle Eastern Buffet (Lunch),Pursly,50.0,g
+Middle Eastern Buffet (Lunch),Coriandor,20.0,g
+Middle Eastern Buffet (Lunch),Garlic,20.0,g
+Middle Eastern Buffet (Lunch),Rozmery,20.0,g
+Middle Eastern Buffet (Lunch),Black peeper,20.0,g
+Middle Eastern Buffet (Lunch),Cumion,20.0,g
+Middle Eastern Buffet (Lunch),Oil,500.0,g
+Middle Eastern Buffet (Lunch),Avocado,850.0,g
+Middle Eastern Buffet (Lunch),Tomato,150.0,g
+Middle Eastern Buffet (Lunch),Green pepper,20.0,g
+Middle Eastern Buffet (Lunch),Lemon,50.0,g
+Middle Eastern Buffet (Lunch),Coriandor,5.0,g
+Middle Eastern Buffet (Lunch),Salad,150.0,g
+Middle Eastern Buffet (Lunch),Purple cabbage,100.0,g
+Middle Eastern Buffet (Lunch),Carrot,50.0,g
+Middle Eastern Buffet (Lunch),Pemento,100.0,g
+Middle Eastern Buffet (Lunch),Mustard,10.0,ml
+Middle Eastern Buffet (Lunch),Oil,20.0,ml
+Middle Eastern Buffet (Lunch),Vingar,20.0,ml
+Middle Eastern Buffet (Lunch),Flour,500.0,g
+Middle Eastern Buffet (Lunch),Yeast,5.0,g
+Middle Eastern Buffet (Lunch),Galric,20.0,g
+Middle Eastern Buffet (Lunch),Sesame,150.0,g
+Middle Eastern Buffet (Lunch),Coffee,40.0,g
+Middle Eastern Buffet (Lunch),Tea,5.0,g
+Middle Eastern Buffet (Lunch),Ginger,50.0,g
+Middle Eastern Buffet (Lunch),Lentil,400.0,g
+Middle Eastern Buffet (Lunch),Celery,50.0,g
+Middle Eastern Buffet (Lunch),Leek,50.0,g
+Middle Eastern Buffet (Lunch),Ginger,20.0,g
+Middle Eastern Buffet (Lunch),Knor,1.0,pc
+Middle Eastern Buffet (Lunch),Black pepper,2.0,g
+Middle Eastern Buffet (Lunch),Flour,250.0,g
+Middle Eastern Buffet (Lunch),Yeast,2.0,g
+Middle Eastern Buffet (Lunch),Salt,2.0,g
+Middle Eastern Buffet (Lunch),Rosmeery,5.0,g
+Middle Eastern Buffet (Lunch),Carrot,100.0,g
+Middle Eastern Buffet (Lunch),Cheese,200.0,g
+Middle Eastern Buffet (Lunch),Zucchini,100.0,g
+Middle Eastern Buffet (Lunch),Brocoloy,50.0,g
+Middle Eastern Buffet (Lunch),Cauliflower,50.0,g
+Middle Eastern Buffet (Lunch),White cabbage,100.0,g
+Middle Eastern Buffet (Lunch),Tomato,300.0,g
+Middle Eastern Buffet (Lunch),Oil,30.0,g
+Middle Eastern Buffet (Lunch),Pursly,10.0,g
+Middle Eastern Buffet (Lunch),Coriandor,10.0,g
+Middle Eastern Buffet (Lunch),Oilive seed,20.0,g
+Middle Eastern Buffet (Lunch),Spagetti,200.0,g
+buffet_name,ingredient,quantity,unit
+Middle Eastern Buffet (Dinner),Lentil,400.0,g
+Middle Eastern Buffet (Dinner),Celery,50.0,g
+Middle Eastern Buffet (Dinner),Leek,50.0,g
+Middle Eastern Buffet (Dinner),Onion,100.0,g
+Middle Eastern Buffet (Dinner),Ginger,20.0,g
+Middle Eastern Buffet (Dinner),Garlic,20.0,g
+Middle Eastern Buffet (Dinner),Oil,20.0,ml
+Middle Eastern Buffet (Dinner),Knor,1.0,pc
+Middle Eastern Buffet (Dinner),Black pepper,2.0,g
+Middle Eastern Buffet (Dinner),Flour,250.0,g
+Middle Eastern Buffet (Dinner),Yeast,2.0,g
+Middle Eastern Buffet (Dinner),Salt,2.0,g
+Middle Eastern Buffet (Dinner),Tomato,200.0,g
+Middle Eastern Buffet (Dinner),Celery,5.0,g
+Middle Eastern Buffet (Dinner),Leek,5.0,g
+Middle Eastern Buffet (Dinner),Onion,5.0,g
+Middle Eastern Buffet (Dinner),Garlic,20.0,g
+Middle Eastern Buffet (Dinner),Rosmeery,5.0,g
+Middle Eastern Buffet (Dinner),Carrot,100.0,g
+Middle Eastern Buffet (Dinner),Cheese,200.0,g
+Middle Eastern Buffet (Dinner),Zucchini,100.0,g
+Middle Eastern Buffet (Dinner),Brocoloy,50.0,g
+Middle Eastern Buffet (Dinner),Cauliflower,50.0,g
+Middle Eastern Buffet (Dinner),Fish,450.0,g
+Middle Eastern Buffet (Dinner),Onion,200.0,g
+Middle Eastern Buffet (Dinner),Tomato,200.0,g
+Middle Eastern Buffet (Dinner),Pimento,200.0,g
+Middle Eastern Buffet (Dinner),Mustard,5.0,g
+Middle Eastern Buffet (Dinner),Lemon,1.0,pc
+Middle Eastern Buffet (Dinner),Rozmery,5.0,g
+Middle Eastern Buffet (Dinner),Black pepper,5.0,g
+Middle Eastern Buffet (Dinner),Soya sauce,10.0,ml
+Middle Eastern Buffet (Dinner),Oil,50.0,g
+Middle Eastern Buffet (Dinner),White cabbage,100.0,g
+Middle Eastern Buffet (Dinner),Tomato,300.0,g
+Middle Eastern Buffet (Dinner),Oil,30.0,g
+Middle Eastern Buffet (Dinner),Eggplant,300.0,g
+Middle Eastern Buffet (Dinner),Rozmery,5.0,g
+Middle Eastern Buffet (Dinner),Pursly,10.0,g
+Middle Eastern Buffet (Dinner),Black pepper,5.0,g
+Middle Eastern Buffet (Dinner),Knor,1.0,pc
+Middle Eastern Buffet (Dinner),Coriandor,10.0,g
+Middle Eastern Buffet (Dinner),Oilive seed,20.0,g
+Middle Eastern Buffet (Dinner),Spagetti,200.0,g
+Middle Eastern Buffet (Dinner),Salad,150.0,g
+Middle Eastern Buffet (Dinner),Tomato,200.0,g
+Middle Eastern Buffet (Dinner),Purple cabbage,100.0,g
+Middle Eastern Buffet (Dinner),Carrot,50.0,g
+Middle Eastern Buffet (Dinner),Pemento,100.0,g
+Middle Eastern Buffet (Dinner),Mustard,10.0,ml
+Middle Eastern Buffet (Dinner),Oil,20.0,ml
+Middle Eastern Buffet (Dinner),Vingar,20.0,ml
+Middle Eastern Buffet (Dinner),Honey,5.0,g
+Middle Eastern Buffet (Dinner),Salt,5.0,g
+Middle Eastern Buffet (Dinner),Flour,500.0,g
+Middle Eastern Buffet (Dinner),Yeast,5.0,g
+Chef's Choice Buffet (Lunch),Beef,500.0,g
+Chef's Choice Buffet (Lunch),Onion,100.0,g
+Chef's Choice Buffet (Lunch),Carrot,150.0,g
+Chef's Choice Buffet (Lunch),Celery,50.0,g
+Chef's Choice Buffet (Lunch),Leek,50.0,g
+Chef's Choice Buffet (Lunch),Garlic,20.0,g
+Chef's Choice Buffet (Lunch),Rozmery,10.0,g
+Chef's Choice Buffet (Lunch),Oil,30.0,ml
+Chef's Choice Buffet (Lunch),Tomato pest,200.0,g
+Chef's Choice Buffet (Lunch),Garlic,10.0,g
+Chef's Choice Buffet (Lunch),Lawro,5.0,g
+Chef's Choice Buffet (Lunch),Butter,100.0,g
+Chef's Choice Buffet (Lunch),Milk,500.0,g
+Chef's Choice Buffet (Lunch),Flour,400.0,g
+Chef's Choice Buffet (Lunch),Cheese,400.0,g
+Chef's Choice Buffet (Lunch),Black pepper,10.0,g
+Chef's Choice Buffet (Lunch),White cabbage,100.0,g
+Chef's Choice Buffet (Lunch),Tomato,300.0,g
+Chef's Choice Buffet (Lunch),Oil,30.0,g
+Chef's Choice Buffet (Lunch),Rozmery,5.0,g
+Chef's Choice Buffet (Lunch),Pursly,10.0,g
+Chef's Choice Buffet (Lunch),Black pepper,5.0,g
+Chef's Choice Buffet (Lunch),Coriandor,10.0,g
+Chef's Choice Buffet (Lunch),Oilive seed,20.0,g
+Chef's Choice Buffet (Lunch),Spagetti,200.0,g
+Chef's Choice Buffet (Lunch),Salad,150.0,g
+Chef's Choice Buffet (Lunch),Tomato,200.0,g
+Chef's Choice Buffet (Lunch),Purple cabbage,100.0,g
+Chef's Choice Buffet (Lunch),Carrot,50.0,g
+Chef's Choice Buffet (Lunch),Pemento,100.0,g
+Chef's Choice Buffet (Lunch),Mustard,10.0,ml
+Chef's Choice Buffet (Lunch),Oil,20.0,ml
+Chef's Choice Buffet (Lunch),Vingar,20.0,ml
+Chef's Choice Buffet (Lunch),Honey,5.0,g
+Chef's Choice Buffet (Lunch),Salt,5.0,g
+Chef's Choice Buffet (Lunch),Flour,250.0,g
+Chef's Choice Buffet (Lunch),Yeast,2.0,g
+Chef's Choice Buffet (Lunch),Tomato,400.0,g
+Chef's Choice Buffet (Lunch),Eggplant,400.0,g
+Chef's Choice Buffet (Lunch),Origano,2.0,g
+Chef's Choice Buffet (Lunch),Potato,1.0,kg
+Chef's Choice Buffet (Lunch),Organo,2.0,g
+Chef's Choice Buffet (Lunch),Oil,20.0,g
+Chef's Choice Buffet (Lunch),Berbera,5.0,g
+Chef's Choice Buffet (Lunch),Tumric,5.0,g
+Chef's Choice Buffet (Lunch),Coffee,40.0,g
+Chef's Choice Buffet (Lunch),Tea,5.0,g
+Chef's Choice Buffet (Lunch),Ginger,50.0,g
+Chef's Choice Buffet (Lunch),Cauliflower,1.0,kg
+Chef's Choice Buffet (Lunch),Knor,1.0,pc
+Chef's Choice Buffet (Lunch),Couscous,200.0,g
+Chef's Choice Buffet (Lunch),Carrot,100.0,g
+Chef's Choice Buffet (Lunch),Zucchini,100.0,g
+Chef's Choice Buffet (Lunch),Green beans,100.0,g
+Chef's Choice Buffet (Lunch),Brocoli,100.0,g
+Chef's Choice Buffet (Lunch),Sweet corn,100.0,g
+Chef's Choice Buffet (Lunch),Flour,300.0,g
+Chef's Choice Buffet (Lunch),Yeast,3.0,g
+Chef's Choice Buffet (Lunch),Salt,3.0,g
+Chef's Choice Buffet (Lunch),Milk,200.0,ml
+Chef's Choice Buffet (Lunch),Carrot,200.0,g
+Chef's Choice Buffet (Lunch),Zucchnni,200.0,g
+Chef's Choice Buffet (Lunch),Brocoli,200.0,g
+Chef's Choice Buffet (Lunch),Cauliflower,200.0,g
+Chef's Choice Buffet (Lunch),Cheese,200.0,g
+Chef's Choice Buffet (Lunch),Flour,500.0,g
+Chef's Choice Buffet (Lunch),Yeast,5.0,g
+buffet_name,ingredient,quantity,unit
+Chef's Choice Buffet (Dinner),Celery,50.0,g
+Chef's Choice Buffet (Dinner),Leek,50.0,g
+Chef's Choice Buffet (Dinner),Onion,100.0,g
+Chef's Choice Buffet (Dinner),Garlic,20.0,g
+Chef's Choice Buffet (Dinner),Cauliflower,1.0,kg
+Chef's Choice Buffet (Dinner),Oil,20.0,g
+Chef's Choice Buffet (Dinner),Knor,1.0,pc
+Chef's Choice Buffet (Dinner),Black pepper,2.0,g
+Chef's Choice Buffet (Dinner),Beef,500.0,g
+Chef's Choice Buffet (Dinner),Onion,100.0,g
+Chef's Choice Buffet (Dinner),Carrot,150.0,g
+Chef's Choice Buffet (Dinner),Celery,50.0,g
+Chef's Choice Buffet (Dinner),Leek,50.0,g
+Chef's Choice Buffet (Dinner),Garlic,20.0,g
+Chef's Choice Buffet (Dinner),Rozmery,10.0,g
+Chef's Choice Buffet (Dinner),Knor,2.0,pc
+Chef's Choice Buffet (Dinner),Oil,30.0,ml
+Chef's Choice Buffet (Dinner),Tomato pest,200.0,g
+Chef's Choice Buffet (Dinner),Fresh tomato,400.0,g
+Chef's Choice Buffet (Dinner),Garlic,10.0,g
+Chef's Choice Buffet (Dinner),Lawro,5.0,g
+Chef's Choice Buffet (Dinner),Butter,100.0,g
+Chef's Choice Buffet (Dinner),Milk,500.0,g
+Chef's Choice Buffet (Dinner),Flour,400.0,g
+Chef's Choice Buffet (Dinner),Cheese,400.0,g
+Chef's Choice Buffet (Dinner),Black pepper,10.0,g
+Chef's Choice Buffet (Dinner),Couscous,200.0,g
+Chef's Choice Buffet (Dinner),Onion,100.0,g
+Chef's Choice Buffet (Dinner),Carrot,100.0,g
+Chef's Choice Buffet (Dinner),Zucchini,100.0,g
+Chef's Choice Buffet (Dinner),Green beans,100.0,g
+Chef's Choice Buffet (Dinner),Brocoli,100.0,g
+Chef's Choice Buffet (Dinner),Sweet corn,100.0,g
+Chef's Choice Buffet (Dinner),Garlic,20.0,g
+Chef's Choice Buffet (Dinner),Flour,300.0,g
+Chef's Choice Buffet (Dinner),Yeast,3.0,g
+Chef's Choice Buffet (Dinner),Salt,3.0,g
+Chef's Choice Buffet (Dinner),Oil,20.0,ml
+Chef's Choice Buffet (Dinner),Tomato,400.0,g
+Chef's Choice Buffet (Dinner),Milk,200.0,ml
+Chef's Choice Buffet (Dinner),Butter,100.0,g
+Chef's Choice Buffet (Dinner),Carrot,200.0,g
+Chef's Choice Buffet (Dinner),Zucchnni,200.0,g
+Chef's Choice Buffet (Dinner),Brocoli,200.0,g
+Chef's Choice Buffet (Dinner),Cauliflower,200.0,g
+Chef's Choice Buffet (Dinner),Cheese,200.0,g
+Chef's Choice Buffet (Dinner),Knor,1.0,pc
+Chef's Choice Buffet (Dinner),Rozmery,5.0,g
+Chef's Choice Buffet (Dinner),Black pepper,1.0,g
+Zen Ethiopia Buffet (Lunch),Beef,500.0,g
+Zen Ethiopia Buffet (Lunch),Onion,1.0,kg
+Zen Ethiopia Buffet (Lunch),Berbere,250.0,g
+Zen Ethiopia Buffet (Lunch),Tomato,300.0,g
+Zen Ethiopia Buffet (Lunch),Garlic,30.0,g
+Zen Ethiopia Buffet (Lunch),Oil,100.0,ml
+Zen Ethiopia Buffet (Lunch),Ginger,10.0,g
+Zen Ethiopia Buffet (Lunch),Knor,1.0,pc
+Zen Ethiopia Buffet (Lunch),Rozmery,5.0,g
+Zen Ethiopia Buffet (Lunch),Salt,5.0,g
+Zen Ethiopia Buffet (Lunch),Beef,450.0,g
+Zen Ethiopia Buffet (Lunch),Onion,50.0,g
+Zen Ethiopia Buffet (Lunch),Tomato,100.0,g
+Zen Ethiopia Buffet (Lunch),Green pepper,30.0,g
+Zen Ethiopia Buffet (Lunch),Garlic,10.0,g
+Zen Ethiopia Buffet (Lunch),Oil,20.0,ml
+Zen Ethiopia Buffet (Lunch),Onion,100.0,g
+Zen Ethiopia Buffet (Lunch),Tomato,200.0,g
+Zen Ethiopia Buffet (Lunch),Garlic,20.0,g
+Zen Ethiopia Buffet (Lunch),Onion,500.0,g
+Zen Ethiopia Buffet (Lunch),Oil,200.0,ml
+Zen Ethiopia Buffet (Lunch),Berber,250.0,g
+Zen Ethiopia Buffet (Lunch),Lentil,300.0,g
+Zen Ethiopia Buffet (Lunch),Tumeric,10.0,g
+Zen Ethiopia Buffet (Lunch),Oil,200.0,g
+Zen Ethiopia Buffet (Lunch),Green pepper,10.0,g
+Zen Ethiopia Buffet (Lunch),Spinach,1.0,kg
+Zen Ethiopia Buffet (Lunch),Coriandor,5.0,g
+Zen Ethiopia Buffet (Lunch),Chilly,5.0,g
+Zen Ethiopia Buffet (Lunch),Lemon,1.0,pc
+Zen Ethiopia Buffet (Lunch),Garlic,5.0,g
+Zen Ethiopia Buffet (Lunch),Condament,5.0,g
+Zen Ethiopia Buffet (Lunch),Berbera,5.0,g
+Zen Ethiopia Buffet (Lunch),Coffee,40.0,g
+Zen Ethiopia Buffet (Lunch),Tea,5.0,g
+Zen Ethiopia Buffet (Lunch),Ginger,50.0,g
+Zen Ethiopia Buffet (Lunch),Leek,50.0,g
+Zen Ethiopia Buffet (Lunch),Celery,50.0,g
+Zen Ethiopia Buffet (Lunch),Tomato paste,20.0,g
+Zen Ethiopia Buffet (Lunch),Oil,50.0,ml
+Zen Ethiopia Buffet (Lunch),Beef,300.0,g
+Zen Ethiopia Buffet (Lunch),Carrot,200.0,g
+Zen Ethiopia Buffet (Lunch),Flour,10.0,g
+Zen Ethiopia Buffet (Lunch),Soya,10.0,g
+Zen Ethiopia Buffet (Lunch),Black pepper,5.0,g
+Zen Ethiopia Buffet (Lunch),Red wine,20.0,ml
+Zen Ethiopia Buffet (Lunch),Chickpea,200.0,g
+Zen Ethiopia Buffet (Lunch),Pursly,10.0,g
+Zen Ethiopia Buffet (Lunch),Rozmery,10.0,g
+Zen Ethiopia Buffet (Lunch),Cumin,10.0,g
+Zen Ethiopia Buffet (Lunch),Black pepper,10.0,g
+Zen Ethiopia Buffet (Lunch),Flour,200.0,g
+Zen Ethiopia Buffet (Lunch),Yeast,2.0,g
+Zen Ethiopia Buffet (Lunch),Salt,6.0,g
+Zen Ethiopia Buffet (Lunch),Oil,150.0,g
+Zen Ethiopia Buffet (Lunch),Salad,100.0,g
+Zen Ethiopia Buffet (Lunch),Cucumber,100.0,g
+Zen Ethiopia Buffet (Lunch),Honey,5.0,g
+Zen Ethiopia Buffet (Lunch),Celery,40.0,g
+Zen Ethiopia Buffet (Lunch),French beans,200.0,g
+Zen Ethiopia Buffet (Lunch),White cabbage,200.0,g
+Zen Ethiopia Buffet (Lunch),Zucchni,200.0,g
+Zen Ethiopia Buffet (Lunch),Tomato pest,10.0,g
+Zen Ethiopia Buffet (Lunch),Black pepper,2.0,g
+Zen Ethiopia Buffet (Lunch),Flour,500.0,g
+Zen Ethiopia Buffet (Lunch),Yeast,5.0,g
+Zen Ethiopia Buffet (Lunch),Salad,150.0,g
+Zen Ethiopia Buffet (Lunch),Green pepper,20.0,g
+Zen Ethiopia Buffet (Lunch),Cucumber,200.0,g
+Zen Ethiopia Buffet (Lunch),Avoicado,300.0,g
+Zen Ethiopia Buffet (Lunch),Sessame seed,10.0,g
+Zen Ethiopia Buffet (Lunch),Mustard,5.0,g
+Zen Ethiopia Buffet (Lunch),Oilve oil,30.0,g
+Zen Ethiopia Buffet (Lunch),Soya sauce,10.0,ml
+Zen Ethiopia Buffet (Lunch),Carrot,100.0,g
+Zen Ethiopia Buffet (Lunch),Purple cabbage,100.0,g
+Zen Ethiopia Buffet (Lunch),Pimento,100.0,g
+Zen Ethiopia Buffet (Lunch),Green pepper,50.0,g
+Friday Dinner Menu,Onion,100.0,g
+Friday Dinner Menu,Leek,50.0,g
+Friday Dinner Menu,Celery,50.0,g
+Friday Dinner Menu,Tomato paste,20.0,g
+Friday Dinner Menu,Oil,50.0,ml
+Friday Dinner Menu,Beef,300.0,g
+Friday Dinner Menu,Carrot,200.0,g
+Friday Dinner Menu,Knor,1.0,pc
+Friday Dinner Menu,Rozmery,5.0,g
+Friday Dinner Menu,Flour,10.0,g
+Friday Dinner Menu,Soya,10.0,g
+Friday Dinner Menu,Black pepper,5.0,g
+Friday Dinner Menu,Red wine,20.0,ml
+Friday Dinner Menu,Chickpea,200.0,g
+Friday Dinner Menu,Pursly,10.0,g
+Friday Dinner Menu,Rozmery,10.0,g
+Friday Dinner Menu,Cumin,10.0,g
+Friday Dinner Menu,Black pepper,10.0,g
+Friday Dinner Menu,Garlic,10.0,g
+Friday Dinner Menu,Flour,200.0,g
+Friday Dinner Menu,Yeast,2.0,g
+Friday Dinner Menu,Salt,6.0,g
+Friday Dinner Menu,Oil,150.0,g
+Friday Dinner Menu,Salad,100.0,g
+Friday Dinner Menu,Tomato,100.0,g
+Friday Dinner Menu,Cucumber,100.0,g
+Friday Dinner Menu,Onion,50.0,g
+Friday Dinner Menu,Avocado,300.0,g
+Friday Dinner Menu,Lemon,1.0,pc
+Friday Dinner Menu,Honey,5.0,g
+Friday Dinner Menu,Onion,100.0,g
+Friday Dinner Menu,Carrot,200.0,g
+Friday Dinner Menu,French beans,200.0,g
+Friday Dinner Menu,White cabbage,200.0,g
+Friday Dinner Menu,Zucchni,200.0,g
+Friday Dinner Menu,Tomato pest,10.0,g
+Friday Dinner Menu,Oil,20.0,ml
+Friday Dinner Menu,Garlic,20.0,g
+Friday Dinner Menu,Black pepper,2.0,g
+Friday Dinner Menu,Rice,300.0,g
+Friday Dinner Menu,Flour,500.0,g
+Friday Dinner Menu,Yeast,5.0,g
+Friday Dinner Menu,Salt,5.0,g
+Friday Dinner Menu,Salad,150.0,g
+Friday Dinner Menu,Green pepper,20.0,g
+Friday Dinner Menu,Tomato,200.0,g
+Friday Dinner Menu,Cucumber,200.0,g
+Friday Dinner Menu,Avocado,300.0,g
+Friday Dinner Menu,Sesame seed,10.0,g
+Friday Dinner Menu,Mustard,5.0,g
+Friday Dinner Menu,Olive oil,30.0,g
+Friday Dinner Menu,Soya sauce,10.0,ml
+Friday Dinner Menu,Carrot,100.0,g
+Friday Dinner Menu,Purple cabbage,100.0,g
+Friday Dinner Menu,Pimento,100.0,g
+Friday Dinner Menu,Green pepper,50.0,g
+Asian Buffet,Toffu,1.0,pc
+Asian Buffet,Green onion,50.0,g
+Asian Buffet,Knor,1.0,pc
+Asian Buffet,Soya souce,5.0,ml
+Asian Buffet,Egg,2.0,pc
+Asian Buffet,Soya been,5.0,g
+Asian Buffet,Onion,100.0,g
+Asian Buffet,Green onion,25.0,g
+Asian Buffet,Garlic,10.0,g
+Asian Buffet,Ginger,10.0,g
+Asian Buffet,Soya souse,25.0,ml
+Asian Buffet,Beef,350.0,g
+Asian Buffet,Oyster souse,15.0,ml
+Asian Buffet,Corn flou,5.0,g
+Asian Buffet,Soda,2.0,ml
+Asian Buffet,Oil,30.0,ml
+Asian Buffet,Chicken,500.0,g
+Asian Buffet,Soya souce,10.0,ml
+Asian Buffet,Oyster souce,10.0,ml
+Asian Buffet,Chily,2.5,ml
+Asian Buffet,Garlic,5.0,g
+Asian Buffet,Ginger,5.0,ml
+Asian Buffet,Cream,10.0,g
+Asian Buffet,Mushroom,200.0,g
+Asian Buffet,White cabbage,100.0,g
+Asian Buffet,Brocoli,100.0,g
+Asian Buffet,Freanch beans,50.0,g
+Asian Buffet,Couli flower,150.0,g
+Asian Buffet,Zucuni,150.0,g
+Asian Buffet,Piminto,150.0,ml
+Asian Buffet,Carrot,150.0,g
+Asian Buffet,Flour,125.0,g
+Asian Buffet,Salt,2.5,g
+Asian Buffet,Purple cabbage,100.0,g
+Asian Buffet,Carrot,150.0,ml
+Asian Buffet,Leek,83.0,g
+Asian Buffet,Piminto,50.0,g
+Asian Buffet,Lemon,1.0,pc
+Asian Buffet,Soya souce,2.5,ml
+Asian Buffet,Sesame oil,50.0,ml
+Asian Buffet,Sesame seed,5.0,g
+Saturday Buffet (Lunch),Chicken,450.0,g
+Saturday Buffet (Lunch),Onion,200.0,g
+Saturday Buffet (Lunch),Tomato,200.0,g
+Saturday Buffet (Lunch),Green pepper,100.0,g
+Saturday Buffet (Lunch),Pimento,200.0,g
+Saturday Buffet (Lunch),Rozmery,5.0,g
+Saturday Buffet (Lunch),Black pepper,5.0,g
+Saturday Buffet (Lunch),Mustard,5.0,g
+Saturday Buffet (Lunch),Soya sauce,10.0,g
+Saturday Buffet (Lunch),Oil,100.0,ml
+Saturday Buffet (Lunch),Zucchni,200.0,ml
+Saturday Buffet (Lunch),Eggplant,200.0,ml
+Saturday Buffet (Lunch),Black peeper,5.0,g
+Saturday Buffet (Lunch),Couscous,200.0,g
+Saturday Buffet (Lunch),Onion,100.0,g
+Saturday Buffet (Lunch),White cabbage,200.0,g
+Saturday Buffet (Lunch),Tomato,300.0,g
+Saturday Buffet (Lunch),Oil,30.0,ml
+Saturday Buffet (Lunch),Garlic,20.0,g
+Saturday Buffet (Lunch),Salad,150.0,g
+Saturday Buffet (Lunch),Purple cabbage,100.0,g
+Saturday Buffet (Lunch),Carrot,50.0,g
+Saturday Buffet (Lunch),Pemento,100.0,g
+Saturday Buffet (Lunch),Mustard,10.0,ml
+Saturday Buffet (Lunch),Oil,20.0,ml
+Saturday Buffet (Lunch),Vingar,20.0,ml
+Saturday Buffet (Lunch),Honey,5.0,g
+Saturday Buffet (Lunch),Salt,5.0,g
+Saturday Buffet (Lunch),Knor,1.0,pc
+Saturday Buffet (Lunch),Beef,500.0,g
+Saturday Buffet (Lunch),Onion,1.0,kg
+Saturday Buffet (Lunch),Berbere,250.0,g
+Saturday Buffet (Lunch),Garlic,30.0,g
+Saturday Buffet (Lunch),Ginger,10.0,g
+Saturday Buffet (Lunch),Onion,500.0,g
+Saturday Buffet (Lunch),Oil,200.0,ml
+Saturday Buffet (Lunch),Berber,250.0,g
+Saturday Buffet (Lunch),Lentil,300.0,g
+Saturday Buffet (Lunch),Carrot,400.0,g
+Saturday Buffet (Lunch),Green beans,400.0,g
+Saturday Buffet (Lunch),Coffee,40.0,g
+Saturday Buffet (Lunch),Tea,5.0,g
+Saturday Buffet (Lunch),Ginger,50.0,g
+Saturday Buffet (Lunch),Celery,40.0,g
+Saturday Buffet (Lunch),Leek,50.0,g
+Saturday Buffet (Lunch),Ginger,20.0,g
+Saturday Buffet (Lunch),Carrot,1.0,kg
+Saturday Buffet (Lunch),Chickpea,200.0,g
+Saturday Buffet (Lunch),Pursly,10.0,g
+Saturday Buffet (Lunch),Rozmery,10.0,g
+Saturday Buffet (Lunch),Cumin,10.0,g
+Saturday Buffet (Lunch),Black pepper,10.0,g
+Saturday Buffet (Lunch),Garlic,10.0,g
+Saturday Buffet (Lunch),Flour,200.0,g
+Saturday Buffet (Lunch),Yeast,2.0,g
+Saturday Buffet (Lunch),Salt,6.0,g
+Saturday Buffet (Lunch),Oil,150.0,g
+Saturday Buffet (Lunch),Salad,100.0,g
+Saturday Buffet (Lunch),Tomato,100.0,g
+Saturday Buffet (Lunch),Cucumber,100.0,g
+Saturday Buffet (Lunch),Onion,50.0,g
+Saturday Buffet (Lunch),Beef,200.0,g
+Saturday Buffet (Lunch),Carrot,100.0,g
+Saturday Buffet (Lunch),Tomato pest,20.0,g
+Saturday Buffet (Lunch),Celery,20.0,g
+Saturday Buffet (Lunch),Butter,20.0,g
+Saturday Buffet (Lunch),Spagetti,200.0,g
+Saturday Buffet (Lunch),Carrot,300.0,g
+Saturday Buffet (Lunch),Zucchni,300.0,g
+Saturday Buffet (Lunch),Brocoli,300.0,g
+Saturday Buffet (Lunch),Cauliflower,300.0,g
+Saturday Buffet (Lunch),Pimento,100.0,g
+Saturday Buffet (Lunch),Coriandor,10.0,g
+Saturday Buffet (Lunch),Oil,10.0,ml
+Saturday Buffet (Lunch),Flour,500.0,g
+Saturday Buffet (Lunch),Yeast,5.0,g
