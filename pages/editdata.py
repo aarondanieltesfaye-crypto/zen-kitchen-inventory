@@ -55,6 +55,17 @@ def write_sheet(sheet_name, df):
 # ttl=30 means Streamlit re-checks the sheet at most every 30 seconds per user,
 # so multiple staff members see reasonably fresh data without hammering the API.
 
+def _clean_types(df, text_cols, number_cols):
+    """Force consistent dtypes so st.data_editor's grid doesn't get confused
+    by mixed str/int/float cells coming back from Google Sheets."""
+    for col in text_cols:
+        if col in df.columns:
+            df[col] = df[col].astype(str).str.strip()
+    for col in number_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0.0)
+    return df
+
 @st.cache_data(ttl=30)
 def load_inventory():
     df = read_sheet("inventory")
@@ -67,9 +78,7 @@ def load_inventory():
             'reorder_level': [2.0, 1.0, 12.0, 3.0, 3.0, 2.0, 0.5, 5.0, 5.0, 4.0, 1.0, 100.0]
         })
         write_sheet("inventory", df)
-    else:
-        df['quantity'] = pd.to_numeric(df['quantity'], errors='coerce')
-        df['reorder_level'] = pd.to_numeric(df['reorder_level'], errors='coerce')
+    df = _clean_types(df, text_cols=['item', 'category', 'unit'], number_cols=['quantity', 'reorder_level'])
     return df
 
 @st.cache_data(ttl=30)
@@ -83,8 +92,7 @@ def load_recipes():
             'unit': ['g', 'g', 'g', 'ml', 'pc', 'g', 'g']
         })
         write_sheet("recipes", df)
-    else:
-        df['quantity'] = pd.to_numeric(df['quantity'], errors='coerce')
+    df = _clean_types(df, text_cols=['recipe_name', 'ingredient', 'unit'], number_cols=['quantity'])
     return df
 
 @st.cache_data(ttl=30)
@@ -98,8 +106,7 @@ def load_buffet_recipes():
             'unit': ['pc', 'ml', 'g', 'g', 'g']
         })
         write_sheet("buffet_recipes", df)
-    else:
-        df['quantity'] = pd.to_numeric(df['quantity'], errors='coerce')
+    df = _clean_types(df, text_cols=['buffet_name', 'ingredient', 'unit'], number_cols=['quantity'])
     return df
 
 # --- LOAD DATA ---
@@ -241,13 +248,41 @@ elif page == "Edit Data":
     # --- Inventory Tab ---
     with tab1:
         st.subheader("📦 Edit Inventory")
-        st.caption("💡 Edit quantities, categories, and reorder levels. Double-click any cell to edit.")
+
+        # Reliable mobile-friendly quantity updater (avoids the data_editor
+        # touch-editing bug for numeric cells on phones/tablets).
+        with st.container(border=True):
+            st.markdown("**🔢 Quick Update Quantity**")
+            st.caption("Use this on a phone — it's more reliable than tapping cells directly below.")
+            if not inventory_df.empty:
+                qty_item = st.selectbox("Item", inventory_df['item'].tolist(), key="qty_update_item")
+                current_row = inventory_df[inventory_df['item'] == qty_item].iloc[0]
+                current_qty = float(current_row['quantity'])
+                st.caption(f"Current quantity: {current_qty} {current_row['unit']}")
+                new_qty_value = st.number_input(
+                    "New quantity", min_value=0.0, value=current_qty, step=0.1, key="qty_update_value"
+                )
+                if st.button("✅ Update Quantity", type="primary", key="qty_update_btn"):
+                    inventory_df.loc[inventory_df['item'] == qty_item, 'quantity'] = new_qty_value
+                    write_sheet("inventory", inventory_df)
+                    st.success(f"✅ {qty_item} updated to {new_qty_value} {current_row['unit']}")
+                    st.rerun()
+
+        st.markdown("---")
+        st.caption("💡 Full table below — best used on desktop. Double-tap a cell to edit, then use 'Save Inventory Changes'.")
 
         edited_inventory = st.data_editor(
             inventory_df,
             num_rows="dynamic",
             use_container_width=True,
-            key="app_editor_inventory"
+            key="app_editor_inventory",
+            column_config={
+                "item": st.column_config.TextColumn("Item"),
+                "category": st.column_config.TextColumn("Category"),
+                "unit": st.column_config.TextColumn("Unit"),
+                "quantity": st.column_config.NumberColumn("Quantity", step=0.1, format="%.2f"),
+                "reorder_level": st.column_config.NumberColumn("Reorder Level", step=0.1, format="%.2f"),
+            }
         )
 
         if st.button("💾 Save Inventory Changes", type="primary", key="app_save_inventory"):
@@ -273,6 +308,26 @@ elif page == "Edit Data":
     with tab2:
         st.subheader("📝 Edit Recipes")
 
+        # Reliable mobile-friendly quantity updater for a single recipe ingredient
+        with st.container(border=True):
+            st.markdown("**🔢 Quick Update Ingredient Quantity**")
+            st.caption("Use this on a phone — it's more reliable than tapping cells directly below.")
+            if not recipes_df.empty:
+                r_recipe = st.selectbox("Recipe", recipes_df['recipe_name'].unique().tolist(), key="qty_update_recipe")
+                r_options = recipes_df[recipes_df['recipe_name'] == r_recipe]['ingredient'].tolist()
+                if r_options:
+                    r_ingredient = st.selectbox("Ingredient", r_options, key="qty_update_recipe_ing")
+                    r_row = recipes_df[(recipes_df['recipe_name'] == r_recipe) & (recipes_df['ingredient'] == r_ingredient)].iloc[0]
+                    st.caption(f"Current: {float(r_row['quantity'])} {r_row['unit']}")
+                    r_new_qty = st.number_input("New quantity", min_value=0.0, value=float(r_row['quantity']), step=0.1, key="qty_update_recipe_value")
+                    if st.button("✅ Update Ingredient Quantity", type="primary", key="qty_update_recipe_btn"):
+                        recipes_df.loc[(recipes_df['recipe_name'] == r_recipe) & (recipes_df['ingredient'] == r_ingredient), 'quantity'] = r_new_qty
+                        write_sheet("recipes", recipes_df)
+                        st.success(f"✅ {r_ingredient} in {r_recipe} updated to {r_new_qty} {r_row['unit']}")
+                        st.rerun()
+
+        st.markdown("---")
+
         if not recipes_df.empty:
             st.subheader("📋 Current Recipes")
             for recipe in recipes_df['recipe_name'].unique():
@@ -292,7 +347,18 @@ elif page == "Edit Data":
                 st.success("Added!")
                 st.rerun()
 
-        edited_recipes = st.data_editor(recipes_df, num_rows="dynamic", use_container_width=True, key="app_editor_recipes")
+        edited_recipes = st.data_editor(
+            recipes_df,
+            num_rows="dynamic",
+            use_container_width=True,
+            key="app_editor_recipes",
+            column_config={
+                "recipe_name": st.column_config.TextColumn("Recipe Name"),
+                "ingredient": st.column_config.TextColumn("Ingredient"),
+                "quantity": st.column_config.NumberColumn("Quantity", step=0.1, format="%.2f"),
+                "unit": st.column_config.TextColumn("Unit"),
+            }
+        )
         if st.button("💾 Save Recipes", type="primary", key="app_save_recipes"):
             write_sheet("recipes", edited_recipes)
             st.success("Recipes saved!")
@@ -302,6 +368,26 @@ elif page == "Edit Data":
     with tab3:
         st.subheader("🍽️ Edit Buffet Recipes")
         st.caption("💡 Quantities are PER PERSON")
+
+        # Reliable mobile-friendly quantity updater for a single buffet ingredient
+        with st.container(border=True):
+            st.markdown("**🔢 Quick Update Ingredient Quantity**")
+            st.caption("Use this on a phone — it's more reliable than tapping cells directly below.")
+            if not buffet_df.empty:
+                b_buffet = st.selectbox("Buffet", buffet_df['buffet_name'].unique().tolist(), key="qty_update_buffet")
+                b_options = buffet_df[buffet_df['buffet_name'] == b_buffet]['ingredient'].tolist()
+                if b_options:
+                    b_ingredient = st.selectbox("Ingredient", b_options, key="qty_update_buffet_ing")
+                    b_row = buffet_df[(buffet_df['buffet_name'] == b_buffet) & (buffet_df['ingredient'] == b_ingredient)].iloc[0]
+                    st.caption(f"Current: {float(b_row['quantity'])} {b_row['unit']} per person")
+                    b_new_qty = st.number_input("New quantity (per person)", min_value=0.0, value=float(b_row['quantity']), step=0.1, key="qty_update_buffet_value")
+                    if st.button("✅ Update Ingredient Quantity", type="primary", key="qty_update_buffet_btn"):
+                        buffet_df.loc[(buffet_df['buffet_name'] == b_buffet) & (buffet_df['ingredient'] == b_ingredient), 'quantity'] = b_new_qty
+                        write_sheet("buffet_recipes", buffet_df)
+                        st.success(f"✅ {b_ingredient} in {b_buffet} updated to {b_new_qty} {b_row['unit']}")
+                        st.rerun()
+
+        st.markdown("---")
 
         if not buffet_df.empty:
             st.subheader("📋 Current Buffets")
@@ -322,7 +408,18 @@ elif page == "Edit Data":
                 st.success("Added!")
                 st.rerun()
 
-        edited_buffet = st.data_editor(buffet_df, num_rows="dynamic", use_container_width=True, key="app_editor_buffet")
+        edited_buffet = st.data_editor(
+            buffet_df,
+            num_rows="dynamic",
+            use_container_width=True,
+            key="app_editor_buffet",
+            column_config={
+                "buffet_name": st.column_config.TextColumn("Buffet Name"),
+                "ingredient": st.column_config.TextColumn("Ingredient"),
+                "quantity": st.column_config.NumberColumn("Quantity (per person)", step=0.1, format="%.2f"),
+                "unit": st.column_config.TextColumn("Unit"),
+            }
+        )
         if st.button("💾 Save Buffet Changes", type="primary", key="app_save_buffet"):
             write_sheet("buffet_recipes", edited_buffet)
             st.success("Buffet saved!")
