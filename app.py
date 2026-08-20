@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
-from auth import require_passcode
 from sheets_backend import read_sheet, write_sheet, clean_types
 
 # Page config
@@ -14,8 +13,6 @@ st.set_page_config(
 
 st.title("🍽️ Zen Kitchen Inventory Management")
 st.markdown("---")
-
-require_passcode()
 
 # --- HELPER: FIX OLD CATEGORIES AND DATA ---
 def _fix_legacy_categories(df):
